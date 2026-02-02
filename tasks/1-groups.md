@@ -60,7 +60,7 @@ Añadid y confirmad:
 ```bash
 git add .
 git commit -m "Add group info [nombre_grupo]"
-``
+```
 
 ⸻
 
