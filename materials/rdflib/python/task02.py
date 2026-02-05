@@ -11,10 +11,9 @@ Original file is located at
 Comenzamos con un grafo vacío
 """
 
-!pip install rdflib
-github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2025-2026/refs/heads/master/Assignment4"
-
 from rdflib import Graph, Namespace, Literal
+
+github_storage = "../rdf/"
 g = Graph()
 
 """Creamos el recurso John Smith con su nombre completo"""
@@ -52,4 +51,4 @@ g.add((EX.JohnSmith, FOAF.knows, EX.JaneSmith))
 
 """Vemos el resultado conjunto"""
 
-print(g.serialize(format="ttl").decode("UTF-8"))
+print(g.serialize(format="ttl").encode("UTF-8"))

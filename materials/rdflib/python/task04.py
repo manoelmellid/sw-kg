@@ -9,12 +9,11 @@ Original file is located at
 **Task 04: Graph querying**
 """
 
-!pip install rdflib
-github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2025-2026/refs/heads/master/Assignment4"
-
 from rdflib import Graph, Namespace, Literal
+
+github_storage = "../rdf/"
 g = Graph()
-g.parse(github_storage+"/resources/example3.rdf", format="xml")
+g.parse(github_storage+"example3.rdf", format="xml")
 
 """Listamos todos los recursos que contienen la propiedad VCARD:FN"""
 
