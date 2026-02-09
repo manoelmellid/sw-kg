@@ -6,11 +6,11 @@ En esta práctica vais a realizar el paso de Data Preparation de la metodología
 
 A partir de vuestro propio dataset (CSV/TSV/JSON/Excel…), debéis:
 1. Importarlo en OpenRefine.
-	2.	Analizar su calidad (valores nulos, inconsistencias, duplicados, formatos).
-	3.	Limpiarlo y normalizarlo (transformaciones, clustering, filtrado, tipado básico…).
-	4.	Exportar:
-		1.  el dataset limpio (CSV o el formato acordado), y
-		2. el JSON de operaciones de OpenRefine (el historial de pasos reproducible).
+2. Analizar su calidad (valores nulos, inconsistencias, duplicados, formatos).
+3. Limpiarlo y normalizarlo (transformaciones, clustering, filtrado, tipado básico…).
+4. Exportar:
+   1. el dataset limpio (CSV o el formato acordado), y
+   2. el JSON de operaciones de OpenRefine (el historial de pasos reproducible).
 
 
 ## Requisitos y entrega
@@ -25,11 +25,11 @@ Debéis entregar en vuestra carpeta del repositorio:
 ## Flujo de trabajo
 
 
-1) Importación en OpenRefine
+### 1) Importación en OpenRefine
 - Crear proyecto e importar el dataset (CSV/TSV/JSON/Excel…).
 - Revisar que OpenRefine detecta bien separadores, cabeceras y tipos.
 
-2) Exploración de calidad
+### 2) Exploración de calidad
 
 Usad Facets / Filters para inspeccionar:
 - valores vacíos / nulos,
@@ -38,7 +38,7 @@ Usad Facets / Filters para inspeccionar:
 - inconsistencias tipográficas (mayúsculas/minúsculas, abreviaturas),
 - duplicados.
 
-3) Limpieza y normalización
+### Limpieza y normalización
 
 Aplicad transformaciones típicas (según vuestro dataset):
 - Trim / espacios: eliminar espacios al inicio/final.
@@ -48,17 +48,17 @@ Aplicad transformaciones típicas (según vuestro dataset):
 - Conversión de tipos (números, fechas, etc.).
 - Clustering para unificar variantes tipográficas (muy útil para nombres/categorías).  ￼
 
-4) Reconciliation
+### Reconciliation
 
 Si vuestro dataset tiene entidades textuales (p. ej., ciudades, países, barrios, organizaciones…), debéis usar Reconcile para enlazarlas contra un servicio (p. ej., Wikidata). Si lo hacéis:
 - indicad qué columna reconciliasteis,
 - qué porcentaje quedó “matched”,
 - añadir una columna con el identificador/URL resultante.
 
-5) Exportación del dataset limpio
+### Exportación del dataset limpio
 
 
-6) Exportación del JSON de operaciones (obligatorio)
+### Exportación del JSON de operaciones (obligatorio)
 
 Exportad el historial de operaciones para que sea reproducible: En OpenRefine: Undo / Redo → Extract… (o “Export” del historial según versión)
 
